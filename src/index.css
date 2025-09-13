@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+
+
+
+@layer base {
+  :root {
+    --font: #DF6951;
+     --font-family: "Volkhov", ui-serif, Georgia, "Times New Roman", serif;
+  
+  }
+}
+.bg{
+  background-color: #F1A501;
+}
+.bg1{
+  background-color: #DF6951;
+}
+nav{
+    position: fixed;
+    width: 100%;
+    background: transparent;
+}
