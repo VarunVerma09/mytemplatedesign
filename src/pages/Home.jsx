@@ -1,16 +1,16 @@
 import React from 'react';
-import bgimg from "../assets/bg.jpg"
+import bgimg from "../assets/bg.jpg";
 import { FaPlay } from "react-icons/fa";
-import model from "../assets/model.jpg"
+import model from "../assets/model.jpg";
 import { Link } from 'react-router-dom';
 import Nav from '../components/Nav';
 import Services from './Services';
 import Bookings from './Bookings';
-import bgforsection from "../assets/bg4.jpg"
+import bgforsection from "../assets/bg4.jpg";
 import logo1 from '../assets/iocns/method/logo1.jpg';
 import logo2 from '../assets/iocns/method/logo2.jpg';
 import logo3 from '../assets/iocns/method/logo3.jpg';
-import loction from "../assets/destimg/grice.jpg"
+import loction from "../assets/destimg/grice.jpg";
 import { PiTelegramLogoLight, PiLeafThin, PiCityThin } from "react-icons/pi";
 import { CiMap, CiHeart } from "react-icons/ci";
 import Footer from '../components/Footer';
@@ -20,6 +20,7 @@ const Home = () => {
   return (
     <>
       <Nav />
+
       {/* Hero Section */}
       <div
         className="h-screen w-full bg-cover bg-center"
@@ -44,9 +45,9 @@ const Home = () => {
             >
               Find out more
             </Link>
-            <p className="flex items-center gap-3">
-              <FaPlay className="inline border h-9 w-9 text-white bg1 p-2 shadow-4xl rounded-full" />{" "}
-              Play Demo
+            <p className="flex items-center gap-3 text-back">
+              <FaPlay className="inline border h-9 w-9 text-white bg1 p-2 shadow-4xl rounded-full" /> Play Demo
+             
             </p>
           </div>
         </div>
@@ -65,16 +66,16 @@ const Home = () => {
         </p>
         <main className="flex flex-col md:flex-row gap-10">
           {/* Left side */}
-          <div className="flex-1">
+          <div className="flex-1 w-full">
             <h1 className="font-bold font-serif leading-snug pt-4 text-3xl md:text-5xl md:w-[32rem]">
               Book your next trip in 3 easy steps
             </h1>
 
             {/* Content body */}
             <div className="mt-10 space-y-8">
-              <div className="flex">
+              <div className="flex flex-col sm:flex-row items-start sm:items-center">
                 <img src={logo1} alt="" className="w-12 md:w-15" />
-                <div className="pl-6">
+                <div className="pl-0 sm:pl-6 pt-4 sm:pt-0">
                   <h4 className="font-black text-gray-400">Choose Destination</h4>
                   <p className="md:w-80 text-sm md:text-base">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna,
@@ -83,9 +84,9 @@ const Home = () => {
                 </div>
               </div>
 
-              <div className="flex">
+              <div className="flex flex-col sm:flex-row items-start sm:items-center">
                 <img src={logo2} alt="" className="w-12 md:w-15" />
-                <div className="pl-6">
+                <div className="pl-0 sm:pl-6 pt-4 sm:pt-0">
                   <h4 className="font-black text-gray-400">Make Payment</h4>
                   <p className="md:w-80 text-sm md:text-base">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna,
@@ -94,9 +95,9 @@ const Home = () => {
                 </div>
               </div>
 
-              <div className="flex">
+              <div className="flex flex-col sm:flex-row items-start sm:items-center">
                 <img src={logo3} alt="" className="w-12 md:w-15" />
-                <div className="pl-6">
+                <div className="pl-0 sm:pl-6 pt-4 sm:pt-0">
                   <h4 className="font-black text-gray-400">
                     Reach Airport on Selected Date
                   </h4>
@@ -110,12 +111,12 @@ const Home = () => {
           </div>
 
           {/* Right side */}
-          <div className="flex-1 flex justify-center items-center">
+          <div className="flex-1 flex justify-center items-center w-full">
             <div className="px-4 py-5 rounded-2xl flex shadow-2xl flex-col bg-white w-full max-w-sm">
               <img src={loction} alt="" className="w-full rounded-xl" />
               <div className="mt-5">
-                <h4>Trip To Greece</h4>
-                <p className="font-normal text-gray-400">
+                <h4 className="font-semibold text-lg">Trip To Greece</h4>
+                <p className="font-normal text-gray-400 text-sm">
                   14-29 June | by Robbin joseph
                 </p>
 
@@ -125,7 +126,7 @@ const Home = () => {
                   <PiTelegramLogoLight className="shadow rounded-full w-10 h-10 p-2 cursor-pointer" />
                 </div>
 
-                <p className="font-normal mt-5 text-gray-400 flex items-center justify-between">
+                <p className="font-normal mt-5 text-gray-400 flex items-center justify-between text-sm">
                   <span className="flex items-center gap-2">
                     <PiCityThin className="inline w-5 h-5" /> 24 people going
                   </span>
@@ -144,4 +145,3 @@ const Home = () => {
 };
 
 export default Home;
-    

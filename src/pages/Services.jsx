@@ -12,9 +12,8 @@ const Services = () => {
             <h1 className='font-bold font-serif text-center pt-4 text-5xl'>We Offer Best Services</h1>
 
             <section className='flex rounded py-30 px-50 gap-20'>
-                <div className=' p-5 rounded-2xl 
-                hover:scale-105 hover:-translate-y-2 hover:shadow-xl cursor-pointer
-                transition-transform duration-300 ease-in-out'><svg width="92" height="78" className="mx-auto mb-4" viewBox="0 0 92 78" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <div className="bg-white bg-opacity-60 backdrop-blur-md p-6 rounded-2xl transition-transform transform ">
+                        <svg width="92" height="78" className="mx-auto mb-4" >
                     <path d="M92 60C92 69.9411 83.9411 78 74 78L47 78C44.2386 78 42 75.7614 42 73L42 39C42 33.4772 46.4772 29 52 29L87 29C89.7614 29 92 31.2386 92 34L92 60Z" fill="#FFF1DA" />
                     <path d="M23.527 50.6574L21.6389 49.7535L10.4222 66.3382H22.9402L24.1464 65.5516V51.225L23.527 50.6574Z" fill="#407093" />
                     <path d="M21.8095 49.8353L17.5644 47.803H16.7644L4.76062 65.5516L5.47525 66.3382H10.6483L21.8095 49.8353Z" fill="#365E7D" />
@@ -40,10 +39,8 @@ const Services = () => {
                     <p className="text-gray-500 text-sm text-center w-35">Built Wicket longer admire do barton vanity itself do in it.</p>
                 </div>
                 {/* second */}
-                <div className='  p-5 rounded-2xl 
-                hover:scale-105 hover:-translate-y-2 hover:shadow-xl cursor-pointer 
-                transition-transform duration-300 ease-in-out'>
-                    <svg width="168" height="154" className="mx-auto -mt-8 " viewBox="0 0 168 154" fill="none" xmlns="http://www.w3.org/2000/svg">
+               <div className="bg-white bg-opacity-60 backdrop-blur-md p-6 rounded-2xl transition-transform transform  shadow-lg">
+                        <svg width="168" height="154" className="mx-auto -mt-8">
                         <path d="M47.8052 72.9999C47.8052 82.9411 55.864 90.9999 65.8052 90.9999L92.8052 90.9999C95.5666 90.9999 97.8052 88.7614 97.8052 85.9999L97.8052 51.9999C97.8052 46.4771 93.328 41.9999 87.8052 41.9999L52.8052 41.9999C50.0437 41.9999 47.8052 44.2385 47.8052 46.9999L47.8052 72.9999Z" fill="#FFF1DA" />
                         <path d="M96.3891 86.9413C95.0307 87.2456 93.7077 87.8091 92.5022 88.5965C89.3614 90.5978 87.5341 93.4546 88.421 94.9767C89.308 96.4988 92.5731 96.1095 95.7138 94.1082C96.9356 93.3486 98.021 92.3779 98.9032 91.2559C99.3125 90.7138 99.386 90.0383 99.0908 89.5334L97.9386 87.556C97.6454 87.0495 97.0374 86.8086 96.3891 86.9413Z" fill="#D5D6DB" />
                         <path d="M88.5021 59.9482C87.5171 60.169 86.5577 60.5778 85.6834 61.1488C83.4066 62.5996 82.0808 64.671 82.7234 65.7738C83.366 66.8766 85.7345 66.5941 88.0111 65.1434C88.897 64.5923 89.6839 63.8881 90.3237 63.0744C90.6202 62.6815 90.6733 62.1922 90.4593 61.8261L89.6251 60.3943C89.4128 60.0271 88.9722 59.8521 88.5021 59.9482Z" fill="#D5D6DB" />
@@ -72,28 +69,22 @@ const Services = () => {
                     <p className="text-gray-500 text-sm text-center w-35">Engrossed listening. Park gate sell they west hard for the.</p>
                 </div>
                 {/* third */}
-                <div className=' p-5 rounded-2xl 
-                hover:scale-105 hover:-translate-y-2 hover:shadow-xl cursor-pointer
-                transition-transform duration-300 ease-in-out'>
-                    <img src={icon3} alt="" className='w-20 ml-8 ' />
-                    <h4 className="font-semibold text-lg  mb-2 text-center">Local Events</h4>
-                    <p className="text-gray-500 text-sm text-center w-35">Barton vanity itself do in it. Preferd to men it engrossed listening. </p>
-                </div>
-                {/* fourth */}
-                <div className='  p-5 rounded-2xl 
-                hover:scale-105 hover:-translate-y-2 hover:shadow-xl cursor-pointer
-                transition-transform duration-300 ease-in-outcontent-center '>
-                    <img src={icon4} alt="" className='w-20 ml-5' />
+                <div className="bg-white bg-opacity-60 backdrop-blur-md p-6 rounded-2xl transition-transform transform ">
+                        <img src={icon3} alt="Local Events" className="w-20 mx-auto mb-4" />
+                        <h4 className="font-semibold text-lg mb-2 text-center">Local Events</h4>
+                        <p className="text-gray-600 text-sm text-center">Barton vanity itself do in it. Preferred to men it engrossed listening.</p>
+                    </div>
 
-                    <h4 className="font-semibold text-lg  mb-2 text-center">Customization</h4>
-                    <p className="text-gray-500 text-sm text-center w-35">We deliver outsourced
-                        aviation services for
-                        military customers</p>
-                </div>
+                    {/* Service 4 */}
+                    <div className="bg-white bg-opacity-60 backdrop-blur-md p-6 rounded-2xl transition-transform transform   ">
+                        <img src={icon4} alt="Customization" className="w-20 mx-auto mb-4" />
+                        <h4 className="font-semibold text-lg mb-2 text-center">Customization</h4>
+                        <p className="text-gray-600 text-sm text-center">We deliver outsourced aviation services for military customers.</p>
+                    </div>  
             </section>
 
         </div>
-    );
+    );  
 }
 
 export default Services;
