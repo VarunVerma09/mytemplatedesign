@@ -11,7 +11,7 @@ const Nav = () => {
             <div className="text-2xl font-bold text-gray-800">Travels</div>
 
             {/* Desktop Menu */}
-            <ul className="hidden md:flex gap-6 text-gray-700 font-medium items-center">
+            <ul className="hidden md:flex gap-6 text-gray-600 font-medium items-center">
                 <li className="cursor-pointer hover:text-orange-500"><Link to="/destinations">Destinations</Link></li>
                 <li className="cursor-pointer hover:text-orange-500"><Link to="/bookings">Bookings</Link></li>
                 <li className="cursor-pointer hover:text-orange-500"><Link to="/contact">Contact Us</Link></li>
