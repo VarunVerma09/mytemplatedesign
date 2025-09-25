@@ -6,12 +6,17 @@ import icon4 from "../assets/iocns/4th.jpg"
 
 const Services = () => {
     return (
-        <div className="h-screen w-full bg-cover bg-center"
-            style={{ backgroundImage: `url(${bg})` }}>
-            <p className='uppercase text-center pt-10 text-gray-400 font-bold'>CATEGORY</p>
-            <h1 className='font-bold font-serif text-center pt-4 text-5xl'>We Offer Best Services</h1>
+       <div
+  className="w-full h-auto lg:h-screen bg-center bg-no-repeat bg-contain flex flex-col items-center justify-start px-6 py-10"
+  style={{ backgroundImage: `url(${bg})` }}
+>
+  <p className="uppercase text-gray-400 font-bold text-center mb-2">CATEGORY</p>
+  <h1 className="font-bold font-serif text-2xl md:text-4xl lg:text-5xl text-center">
+    We Offer Best Services
+  </h1>
 
-            <section className='flex rounded py-30 px-50 gap-20'>
+
+            <section className='flex flex-col lg:flex-row rounded lg:py-30 lg:px-50 gap-20'>
                 <div className="bg-white bg-opacity-60 backdrop-blur-md p-6 rounded-2xl transition-transform transform ">
                         <svg width="92" height="78" className="mx-auto mb-4" >
                     <path d="M92 60C92 69.9411 83.9411 78 74 78L47 78C44.2386 78 42 75.7614 42 73L42 39C42 33.4772 46.4772 29 52 29L87 29C89.7614 29 92 31.2386 92 34L92 60Z" fill="#FFF1DA" />

@@ -18,90 +18,88 @@ import Contact from './Contact';
 
 const Home = () => {
   return (
-    <>
+    <div className="overflow-x-hidden">
       <Nav />
 
       {/* Hero Section */}
       <div
-        className="h-screen w-full bg-cover bg-center"
+        className="h-screen w-full bg-cover bg-center flex"
         style={{ backgroundImage: `url(${bgimg})` }}
       >
-        <div className="pt-24 md:pt-48 px-6 md:pl-40 text-center md:text-left">
+        <div className="pt-24 md:pt-48  text-center md:text-left max-w-[90%] m-auto md:max-w-2xl sm:ml-20">
           <h4 className="uppercase font-black text-base md:text-xl text-[var(--font)]">
             Best Destinations around the world
           </h4>
-          <h1 className="font-serif font-black pt-4 text-4xl md:text-7xl md:w-[35rem] leading-tight">
+          <h1 className="font-serif font-black pt-4 text-4xl md:text-7xl leading-tight">
             Travel, enjoy and live a new and full life
           </h1>
-          <p className="py-6 md:py-10 text-sm md:text-base md:w-[25rem] mx-auto md:mx-0">
+          <p className="py-6 md:py-10 text-sm md:text-base md:w-full">
             Built Wicket longer admire do barton vanity itself do in it. Preferred to
             sportsmen it engrossed listening. Park gate sell they west hard for the.
           </p>
 
           <div className="flex flex-col md:flex-row items-center gap-4 md:gap-10">
-            <Link
-              to="home"
-              className="text-white px-4 py-2 bg rounded inline-block"
-            >
+            <Link to="home" className="text-white px-4 py-2 bg rounded inline-block">
               Find out more
             </Link>
             <p className="flex items-center gap-3 text-back">
               <FaPlay className="inline border h-9 w-9 text-white bg1 p-2 shadow-4xl rounded-full" /> Play Demo
-             
             </p>
           </div>
         </div>
       </div>
 
+      {/* Services Section */}
       <Services />
+
+      {/* Bookings Section */}
       <Bookings />
 
       {/* Steps Section */}
       <section
-        className="min-h-screen w-full bg-cover bg-center px-6 md:px-20 py-10"
+        className="min-h-screen w-full bg-cover bg-center px-6 md:px-12 py-10 md:py-20"
         style={{ backgroundImage: `url(${bgforsection})` }}
       >
-        <p className="text-gray-400 font-bold text-center md:text-left">
-          Easy and Fast
-        </p>
-        <main className="flex flex-col md:flex-row gap-10">
-          {/* Left side */}
-          <div className="flex-1 w-full">
-            <h1 className="font-bold font-serif leading-snug pt-4 text-3xl md:text-5xl md:w-[32rem]">
+        <p className="text-gray-400 font-bold text-center md:text-left mb-6">Easy and Fast</p>
+        <main className="flex flex-col md:flex-row gap-10 flex-wrap max-w-6xl mx-auto">
+          {/* Left Side */}
+          <div className="flex-1 w-full md:max-w-lg">
+            <h1 className="font-bold font-serif leading-snug pt-4 text-3xl md:text-5xl w-full">
               Book your next trip in 3 easy steps
             </h1>
 
-            {/* Content body */}
+            {/* Steps */}
             <div className="mt-10 space-y-8">
-              <div className="flex flex-col sm:flex-row items-start sm:items-center">
-                <img src={logo1} alt="" className="w-12 md:w-15" />
+              {/* Step 1 */}
+              <div className="flex flex-col sm:flex-row items-start sm:items-center w-full">
+                <img src={logo1} alt="Step 1" className="w-12 sm:w-16" />
                 <div className="pl-0 sm:pl-6 pt-4 sm:pt-0">
                   <h4 className="font-black text-gray-400">Choose Destination</h4>
-                  <p className="md:w-80 text-sm md:text-base">
+                  <p className="text-sm sm:text-base md:w-full">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna,
                     tortor tempus.
                   </p>
                 </div>
               </div>
 
-              <div className="flex flex-col sm:flex-row items-start sm:items-center">
-                <img src={logo2} alt="" className="w-12 md:w-15" />
+              {/* Step 2 */}
+              <div className="flex flex-col sm:flex-row items-start sm:items-center w-full">
+                <img src={logo2} alt="Step 2" className="w-12 sm:w-16" />
                 <div className="pl-0 sm:pl-6 pt-4 sm:pt-0">
                   <h4 className="font-black text-gray-400">Make Payment</h4>
-                  <p className="md:w-80 text-sm md:text-base">
+                  <p className="text-sm sm:text-base md:w-full">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna,
                     tortor tempus.
                   </p>
                 </div>
               </div>
 
-              <div className="flex flex-col sm:flex-row items-start sm:items-center">
-                <img src={logo3} alt="" className="w-12 md:w-15" />
+              {/* Step 3 */}
+              <div className="flex flex-col sm:flex-row items-start sm:items-center w-full">
+                <img src={logo3} alt="Step 3" className="w-12 sm:w-16" />
                 <div className="pl-0 sm:pl-6 pt-4 sm:pt-0">
-                  <h4 className="font-black text-gray-400">
-                    Reach Airport on Selected Date
-                  </h4>
-                  <p className="md:w-80 text-sm md:text-base">
+                  <h4 className="font-black text-gray-400">Reach Airport on Selected Date</h4>
+                  <p className="text-sm sm:text-base md:w-full">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna,
                     tortor tempus.
                   </p>
@@ -110,15 +108,13 @@ const Home = () => {
             </div>
           </div>
 
-          {/* Right side */}
-          <div className="flex-1 flex justify-center items-center w-full">
+          {/* Right Side */}
+          <div className="flex-1 flex justify-center items-center w-full mt-10 md:mt-0">
             <div className="px-4 py-5 rounded-2xl flex shadow-2xl flex-col bg-white w-full max-w-sm">
-              <img src={loction} alt="" className="w-full rounded-xl" />
+              <img src={loction} alt="Trip" className="w-full rounded-xl" />
               <div className="mt-5">
                 <h4 className="font-semibold text-lg">Trip To Greece</h4>
-                <p className="font-normal text-gray-400 text-sm">
-                  14-29 June | by Robbin joseph
-                </p>
+                <p className="font-normal text-gray-400 text-sm">14-29 June | by Robbin joseph</p>
 
                 <div className="flex gap-3 mt-3">
                   <PiLeafThin className="shadow rounded-full w-10 h-10 p-2 cursor-pointer" />
@@ -138,9 +134,10 @@ const Home = () => {
         </main>
       </section>
 
+      {/* Contact & Footer */}
       <Contact />
       <Footer />
-    </>
+    </div>
   );
 };
 

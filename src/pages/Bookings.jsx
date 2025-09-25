@@ -8,7 +8,7 @@ import { FaLocationArrow } from "react-icons/fa6";
 const Bookings = () => {
   return (
     <div
-      className="min-h-screen w-full bg-cover bg-center py-10"
+      className="min-h-screen w-full bg-cover bg-center "
       style={{ backgroundImage: `url(${bg})` }}
     >
       <p className="text-center text-gray-400 font-bold">Top Selling</p>
